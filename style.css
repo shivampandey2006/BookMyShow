@@ -1,0 +1,489 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+    top: 40px;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+
+
+}
+
+
+.right {
+    margin-left: 20px;
+}
+
+
+* {
+    margin: 0%;
+}
+
+@media (max-width: 400px) {
+    .head {
+
+        height: auto;
+        padding: 15px 0;
+
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .left {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .right {
+
+        margin-left: 0;
+    }
+}
+
+.help {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+    width: 5rem;
+    background-color: rgb(237, 27, 27);
+    border: none;
+    padding: 2px;
+    font-size: larger;
+    z-index: ;
+
+
+}
+
+.search {
+    width: 15rem;
+    border-radius: 5px;
+    font-style: italic;
+    height: 1.5rem;
+    width: 20rem;
+    margin-bottom: 20px;
+
+
+}
+
+@media(max-width:400px) {
+    .help {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+
+
+.img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.img>img {
+    width: 100%;
+    height: 25rem;
+
+}
+
+@media(max-width:400px) {
+    .img>img {
+        height: 15rem;
+        text-align: center;
+        width: 100%;
+
+    }
+}
+
+.text {
+    position: absolute;
+
+    top: 18rem;
+    left: 4rem;
+    width: rem;
+    color: white;
+    font-family: fantasy;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@media(max-width:400px) {
+    .text {
+        font-size: 1rem;
+
+        margin-top: 150px;
+
+        width: 100%;
+
+    }
+}
+
+.allimg {
+    display: flex;
+    overflow-x: auto;
+
+
+
+}
+
+.cart {
+
+    margin: 30px;
+    width: 20rem;
+    height: 25rem;
+
+    border: 2px solid black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    box-shadow: 10px 10px rgb(24, 24, 24);
+    /* bottom , right , blur , color give value of bottom and right is negetive
+     if you want opossite rersult and the fourth value is spade badhane ka kaam karta he   */
+    /* yadi ham charo taraf shadow chahiye toh 2 value 0 dedo starting ki than see the result */
+
+}
+
+.imgg {
+
+    width: 20rem;
+    height: 23rem;
+
+    border: 2px solid black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+
+
+
+}
+
+.name {
+    margin: 0;
+
+    width: 20rem;
+    height: 1.8rem;
+    border: 2px solid red;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+
+}
+
+.imgg>img {
+    height: 23rem;
+    width: 20rem;
+}
+
+
+.helper {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-display: auto;
+    text-shadow: 10px #e11d48;
+    position: sticky;
+    top: 40px;
+    background-color: rgb(9, 9, 9);
+    z-index: 10;
+    font-weight: bolder;
+    color: white;
+
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.foot {
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(36, 34, 34);
+
+}
+
+pre {
+    color: white;
+
+}
+
+
+
+/* footer*/
+.footer {
+    background: #0f172a;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-top h2 {
+    color: #e11d48;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    color: #e11d48;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #334155;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imgg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart {
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #e9e2e2;
+}
+
+.hiii:hover {
+    background-color: #181717;
+}
+
+.hiii {
+    background-color: rgb(222, 59, 59);
+    border: none;
+    color: #fff;
+
+}
+
+.img img {
+    transition: opacity 0.3s ease;
+}
+
+.img img:hover {
+    opacity: 0.8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* IE, old Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* Pure website ka scrollbar hide */
+* {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.hiii {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.hiii:hover {
+    background-color: red;
+    transition: all;
+}
+
+.red {
+
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+
+    transform: rotate(-15deg);
+    /* tilt effect */
+
+    font-weight: bold;
+    text-shadow: 0px 0px 10px;
+}
+
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    animation: scroll 12s linear infinite
+}
+
+.track span {
+    white-space: nowrap;
+    margin-right: 50px;
+    color: #ff2e2e;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* smooth infinite loop */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33.33%);
+    }
+}
+
+/* hover pe pause */
+.ticker:hover .track {
+    animation-play-state: paused;
+}
+
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* header नीचे shift करो */
+.head {
+    margin-top: 50px;
+    /* ticker की height के बराबर */
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: white;
+
+    position: sticky;
+    top: 43px;
+    /* ticker की height */
+    z-index: 99;
+}
+
+/* .red{
+  animation: spinn 10s linear infinite ;
+}
+@keyframes spinn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.p1{
+  animation: spin 3s linear infinite ;
+}
+@keyframes spin {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+} */
